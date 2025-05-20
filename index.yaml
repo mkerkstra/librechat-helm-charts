@@ -23,7 +23,7 @@ entries:
     name: librechat
     type: application
     urls:
-    - https://mkerkstra.github.io/LibreChat/librechat-1.8.8.tgz
+    - https://mkerkstra.github.io/librechat-helm-charts/librechat-1.8.8.tgz
     version: 1.8.8
   librechat-rag-api:
   - apiVersion: v2
@@ -40,7 +40,7 @@ entries:
     name: librechat-rag-api
     type: application
     urls:
-    - https://mkerkstra.github.io/LibreChat/charts/librechat-rag-api-0.5.2.tgz
+    - https://mkerkstra.github.io/librechat-helm-charts/charts/librechat-rag-api-0.5.2.tgz
     version: 0.5.2
   meilisearch:
   - apiVersion: v1
@@ -57,7 +57,7 @@ entries:
       name: Clementine
     name: meilisearch
     urls:
-    - https://mkerkstra.github.io/LibreChat/charts/meilisearch-0.11.0.tgz
+    - https://mkerkstra.github.io/librechat-helm-charts/charts/meilisearch-0.11.0.tgz
     version: 0.11.0
   mongodb:
   - annotations:
@@ -103,6 +103,6 @@ entries:
     sources:
     - https://github.com/bitnami/charts/tree/main/bitnami/mongodb
     urls:
-    - https://mkerkstra.github.io/LibreChat/charts/mongodb-16.3.0.tgz
+    - https://mkerkstra.github.io/librechat-helm-charts/charts/mongodb-16.3.0.tgz
     version: 16.3.0
 generated: "2025-05-20T12:01:29.576425-05:00"
