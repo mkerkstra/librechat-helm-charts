@@ -3,7 +3,7 @@ entries:
   librechat:
   - apiVersion: v2
     appVersion: v0.7.7
-    created: "2025-05-20T12:01:29.586396-05:00"
+    created: "2025-05-20T13:04:31.968213-05:00"
     dependencies:
     - condition: mongodb.enabled
       name: mongodb
@@ -28,7 +28,7 @@ entries:
   librechat-rag-api:
   - apiVersion: v2
     appVersion: v0.4.0
-    created: "2025-05-20T12:01:29.586966-05:00"
+    created: "2025-05-20T13:04:31.969971-05:00"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -45,7 +45,7 @@ entries:
   meilisearch:
   - apiVersion: v1
     appVersion: v1.12.0
-    created: "2025-05-20T12:01:29.587675-05:00"
+    created: "2025-05-20T13:04:31.970849-05:00"
     description: A Helm chart for the Meilisearch search engine
     digest: 76a3359997f0a7e7f90486c694aae763963cd084847ca17342c790addf5d8f25
     home: https://github.com/meilisearch/meilisearch-kubernetes/tree/main/charts/meilisearch
@@ -76,7 +76,7 @@ entries:
       licenses: Apache-2.0
     apiVersion: v2
     appVersion: 8.0.3
-    created: "2025-05-20T12:01:29.592431-05:00"
+    created: "2025-05-20T13:04:31.975877-05:00"
     dependencies:
     - name: common
       repository: oci://registry-1.docker.io/bitnamicharts
@@ -105,4 +105,4 @@ entries:
     urls:
     - https://mkerkstra.github.io/librechat-helm-charts/charts/mongodb-16.3.0.tgz
     version: 16.3.0
-generated: "2025-05-20T12:01:29.576425-05:00"
+generated: "2025-05-20T13:04:31.960128-05:00"
