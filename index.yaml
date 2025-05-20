@@ -1,0 +1,108 @@
+apiVersion: v1
+entries:
+  librechat:
+  - apiVersion: v2
+    appVersion: v0.7.7
+    created: "2025-05-20T12:01:29.586396-05:00"
+    dependencies:
+    - condition: mongodb.enabled
+      name: mongodb
+      repository: https://charts.bitnami.com/bitnami
+      version: 16.3.0
+    - condition: meilisearch.enabled
+      name: meilisearch
+      repository: https://meilisearch.github.io/meilisearch-kubernetes
+      version: 0.11.0
+    - condition: librechat-rag-api.enabled
+      name: librechat-rag-api
+      repository: file://../librechat-rag-api
+      version: 0.5.2
+    description: A Helm chart for LibreChat
+    digest: 60d073a844c94276c117e1cfd61293f2c683117b502322c7d45174fbdc68ad00
+    home: https://www.librechat.ai
+    name: librechat
+    type: application
+    urls:
+    - https://mkerkstra.github.io/LibreChat/librechat-1.8.8.tgz
+    version: 1.8.8
+  librechat-rag-api:
+  - apiVersion: v2
+    appVersion: v0.4.0
+    created: "2025-05-20T12:01:29.586966-05:00"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 15.5.38
+    description: A Helm chart for LibreChat
+    digest: 389d527a80fe93bd1d8e0751541903dd51020e160606afc1b166d119487ae654
+    home: https://www.librechat.ai
+    name: librechat-rag-api
+    type: application
+    urls:
+    - https://mkerkstra.github.io/LibreChat/charts/librechat-rag-api-0.5.2.tgz
+    version: 0.5.2
+  meilisearch:
+  - apiVersion: v1
+    appVersion: v1.12.0
+    created: "2025-05-20T12:01:29.587675-05:00"
+    description: A Helm chart for the Meilisearch search engine
+    digest: 76a3359997f0a7e7f90486c694aae763963cd084847ca17342c790addf5d8f25
+    home: https://github.com/meilisearch/meilisearch-kubernetes/tree/main/charts/meilisearch
+    icon: https://raw.githubusercontent.com/meilisearch/integration-guides/main/assets/logos/logo.svg
+    maintainers:
+    - email: bruno@meilisearch.com
+      name: Bruno
+    - email: clementine@meilisearch.com
+      name: Clementine
+    name: meilisearch
+    urls:
+    - https://mkerkstra.github.io/LibreChat/charts/meilisearch-0.11.0.tgz
+    version: 0.11.0
+  mongodb:
+  - annotations:
+      category: Database
+      images: |
+        - name: kubectl
+          image: docker.io/bitnami/kubectl:1.31.2-debian-12-r3
+        - name: mongodb
+          image: docker.io/bitnami/mongodb:8.0.3-debian-12-r0
+        - name: mongodb-exporter
+          image: docker.io/bitnami/mongodb-exporter:0.41.2-debian-12-r1
+        - name: nginx
+          image: docker.io/bitnami/nginx:1.27.2-debian-12-r2
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r32
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 8.0.3
+    created: "2025-05-20T12:01:29.592431-05:00"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: MongoDB(R) is a relational open source NoSQL database. Easy to use,
+      it stores data in JSON-like documents. Automated scalability and high-performance.
+      Ideal for developing cloud native applications.
+    digest: 2c4417711a6f3a3834b49a4d7fd69de1ee95538836d233669ccbf4ded1fc9a96
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/mongodb/img/mongodb-stack-220x234.png
+    keywords:
+    - mongodb
+    - database
+    - nosql
+    - cluster
+    - replicaset
+    - replication
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: mongodb
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/mongodb
+    urls:
+    - https://mkerkstra.github.io/LibreChat/charts/mongodb-16.3.0.tgz
+    version: 16.3.0
+generated: "2025-05-20T12:01:29.576425-05:00"
